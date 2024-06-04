@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <script src="https://unpkg.com/scrollreveal"></script>
+</head>
+<body>
+    
+    <section class="sec-01">
+        <div class="container">
+            <h2 class="main-title"> Reveal Elements On Scroll </h2>
+            <div class="content">
+                <div class="image">
+                    <img src="banner.jpg" alt="">
+                </div>
+                <div class="text-box">
+                    <h3> Lorem, ipsum.</h3>
+                    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Omnis debitis esse vitae in velit earum reprehenderit animi quasi ducimus excepturi?</p>
+                </div>
+            </div>
+            <div class="media-icons">
+                <a href="#" class="icon"><i class="fab fa-facebook"></i></a>
+                <a href="#" class="icon"><i class="fab fa-instagram"></i></a>
+                <a href="#" class="icon"><i class="fab fa-twitter"></i></a>
+                <a href="#" class="icon"><i class="fab fa-youtube"></i></a>
+            </div>
+        </div>
+    </section>
+
+    <section class="sec-02">
+        <div class="container">
+            <h3 class="section-title"> Lorem, ipsum. </h3>
+            <div class="content">
+                <div class="image">
+                    <img src="nasa.jpg" alt="">
+                </div>
+                <div class="info">
+                    <h4 class="info-title"> Description </h4>
+                    <p> Lorem ipsum dolor sit amet consectetur adipisicing elit. Lorem ipsum dolor sit amet consectetur, adipisicing elit. Accusamus molestias blanditiis unde cupiditate perspiciatis dolorem. Aspernatur rem iusto voluptas repellendus. Deleniti, non!</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="sec-03">
+        <div class="container">
+            <h3 class="section-title"> Lorem, ipsum.</h3>
+            <div class="content">
+                <div class="media-info">
+                    <li><a href="#"><i class="fab fa-facebook"></i> Facebook </a></li>
+                    <li><a href="#"><i class="fab fa-instagram"></i> Instagram </a></li>
+                    <li><a href="#"><i class="fab fa-twitter"></i> Twitter </a></li>
+                    <li><a href="#"><i class="fab fa-youtube"></i> youtube </a></li>
+                    <li><a href="#"><i class="fab fa-linkedin"></i> Linkedin </a></li>
+                </div>
+                <div class="image">
+                    <img src="milky.jpg" alt="">
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <script>
+        ScrollReveal({
+            reset: true,
+            distance: '60px',
+            duration: 2500,
+            delay: 400
+        });
+
+        // ScrollReveal().reveal('.main-title, .section-title',{ delay: 500, origin: 'left' })
+        // ScrollReveal().reveal('.sec-01 .image, .info',{ delay: 600, origin: 'bottom' })
+        // ScrollReveal().reveal('.text-box',{ delay: 700, origin: 'right' })
+        // ScrollReveal().reveal('.media-icons i',{ delay: 500, origin: 'bottom', interval: 200 })
+        // ScrollReveal().reveal('.sec-02 .image, .sec-03',{ delay: 500, origin: 'top' })
+        // ScrollReveal().reveal('.media-info li',{ delay: 500, origin: 'left', interval: 200 })
+
+        
+        ScrollReveal().reveal('.main-title, .section-title',{ delay: 500, origin: 'left' })
+        ScrollReveal().reveal('.sec-01 .image, .info',{ delay: 600, origin: 'bottom' })
+        ScrollReveal().reveal('.text-box',{ delay: 700, origin: 'bottom' })
+        ScrollReveal().reveal('.media-icons i',{ delay: 500, origin: 'top', interval: 200 })
+        ScrollReveal().reveal('.sec-02 .image, .sec-03',{ delay: 500, origin: 'top' })
+        ScrollReveal().reveal('.media-info li',{ delay: 500, origin: 'right', interval: 200 })
+
+
+
+
+
+
+    </script>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+
+</body>
+</html>
